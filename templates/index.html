@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>nikhil.ml Cognitive AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <h1>Hey, wanna know about AI?</h1>
+    <h2>Namaste Rupeksha Thakur</h2>
+
+    <form method="post">
+        <input type="text" name="message" placeholder="Ask about AI..." required>
+        <button type="submit">Analyze</button>
+    </form>
+
+    <div class="response">
+        {{ response }}
+    </div>
+
+    <div class="analytics">
+        <p>Confidence Level: {{ confidence }}%</p>
+        <p>Conversation Memory Size: {{ memory }}</p>
+    </div>
+
+</div>
+
+</body>
+</html>
